@@ -227,27 +227,27 @@ that share the same class.
 The class selector is denoted by a period `.`
 followed by the class name that we want to target.
 For example, the selector `.username` would target any element
-with the class `"username"`.
+with `class="username"`.
 
 To target a specific HTML element with a specific class,
 use `tagname.classname`.
 For example, the selector `p.username` will target
-`<p>` elements with the class of `"username"`.
+`<p class="username">`.
 
 <p>
   <small>
     To demonstrate this using our <a href="src/index.html">index.html</a>,
     The <b>"Tech Humor"</b> <code>&lt;li&gt;</code>
-    in <code>&lt;nav&gt;</code> now has a class of <code>"active"</code>.
-    Also, every joke <code>&lt;article&gt;</code> now has a class <code>"joke"</code>,
-    and the two paragraphs inside each joke have classes <code>"username"</code> and <code>"punchline"</code>.
+    in <code>&lt;nav&gt;</code> now has <code>class="active"</code>.
+    Also, every joke <code>&lt;article&gt;</code> now has <code>class="joke"</code>,
+    and the two paragraphs inside each joke have <code>class="username"</code> and <code>class="punchline"</code>.
   </small>
 </p>
 
 - Select `<nav>` element, then within it,
   select the `<ul>` child.
   Inside the `<ul>` element,
-  select the `<li>` child with a **class** of `"active"`.
+  select the `<li>` child with `class="active"`.
   Finally, within that `<li>` tag,
   select its `<a>` child and set its `font-weight` property.
   ```css
@@ -256,9 +256,9 @@ For example, the selector `p.username` will target
   }
   ```
 
-- Select any element with the **class** of `"joke"`.
+- Select any element with `class="joke"`.
   Inside that element,
-  select any descendant with a **class** of `"username"`,
+  select any descendant with `class="username"`,
   and set its `font-style` and `font-size` properties.
   ```css
   .joke .username {
@@ -267,9 +267,9 @@ For example, the selector `p.username` will target
   }
   ```
 
-- Select any element with the **class** of `"joke"`.
+- Select any element with `class="joke"`.
   Inside that element,
-  select any descendant with a **class** of `"punchline"`,
+  select any descendant with `class="punchline"`,
   and set its `font-style` property.
   ```css
   .joke .punchline {
@@ -290,30 +290,29 @@ It allows us to apply styles to a single unique element on the web page.
 The id selector is denoted by a hash `#`
 followed by the id that we want to target.
 For example, the selector `#header` would target the element
-with the id of `"header"`.
+with `id="header"`.
 
 To target a specific HTML element with a specific id, use `tag#id`.
-For example, the selector `h1#title` will target the `<h1>` element
-with the id of `"title"`.
+For example, the selector `h1#title` will target `<h1 id="title">`.
 
 Similarly, to target a class of elements but with a specific id, use `.class#id`.
 For example, the selector `.username#user1` will target elements
-with the class `"username"` and the id of `"user1"`.
+with the `class="username"` and `id="user1"`.
 
 <p>
   <small>
     To demonstrate this using our <a href="src/index.html">index.html</a>,
     The <b>"Tech Humor"</b> <code>&lt;h2&gt;</code> in <code>&lt;main&gt;</code>
-    now has an id of <code>"category"</code>,
+    now has <code>id="category"</code>,
     while the <b><i>"Where Geeks and Laughter Collide!"</i></b> <code>&lt;p&gt;</code>
-    now has an id of <code>"tagline"</code>.
-    Also, every joke <code>&lt;article&gt;</code> now has an id from
-    <code>"joke1"</code> to <code>"joke9"</code>.
+    now has <code>id="tagline"</code>.
+    Also, every joke <code>&lt;article&gt;</code> now has ids from
+    <code>id="joke1"</code> to <code>id="joke9"</code>.
   </small>
 </p>
 
 - Select `<main>` element, then within it,
-  find a descendant element with an **id** of `"category"`,
+  find a descendant element with `id="category"`,
   and set its `margin-top` and `margin-bottom` properties.
   ```css
   main #category {
@@ -323,7 +322,7 @@ with the class `"username"` and the id of `"user1"`.
   ```
 
 - Select `<main>` element, then within it,
-  find a descendant element with an **id** of `"tagline"`,
+  find a descendant element with `id="tagline"`,
   and set its `font-style` and `margin-top` properties.
   ```css
   main #tagline {
