@@ -68,7 +68,7 @@ and observe your output for every change.***
 
 ---
 
-#### Element Selector
+#### 1. Element Selector
 An **element selector** is named after the HTML tag without angle brackets.
 For instance, `p` selects all `<p>` elements.
 
@@ -114,7 +114,7 @@ the other basic CSS selectors.
 
 ---
 
-#### Child Selector
+#### 2. Child Selector
 The **child selector** in CSS is used to target elements
 that are ***direct children*** of a specified parent element.
 It is denoted by the greater-than sign `>`.
@@ -181,7 +181,7 @@ It is denoted by the greater-than sign `>`.
 
 ---
 
-#### Descendant Selector
+#### 3. Descendant Selector
 The **descendant selector** in CSS is used to target elements
 that are nested inside a specified parent element,
 regardless of how deeply they are nested.
@@ -218,7 +218,7 @@ of the specified parent element.
   ```
 ---
 
-#### Class Selector
+#### 4. Class Selector
 The **class selector** in CSS is used to target elements
 based on their specific **class attribute**.
 It allows us to apply styles to multiple elements
@@ -282,7 +282,7 @@ However, we specifically wanted these classes to be descendants of `.joke`.
 
 ---
 
-#### Id Selector
+#### 5. Id Selector
 The **id selector** in CSS is used to target elements
 based on their specific id attribute.
 It allows us to apply styles to a single unique element on the web page.
