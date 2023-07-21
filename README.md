@@ -249,9 +249,10 @@ For example, the selector `p.username` will target
 
 - Select any element with the class of `"joke"`.
   In that element, select any descendant with a class of `"username"`,
-  and set its `font-size`:
+  and set its `font-style` and `font-size`:
   ```css
   .joke .username {
+      font-style: italic;
       font-size: 10px;
   }
   ```
