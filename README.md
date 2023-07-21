@@ -1,8 +1,8 @@
-## CSS | Activity #2 (Guided): Internal and External Style, Responsive Design
+## CSS | Activity #2 (Guided): Internal and External Styles, Responsive Design
 In this activity, we will re-create **Gigglepads** from **CSS | Activity #1 (Guided)**
 using **Internal** and **External** stylesheets, and incorporate responsive design:
 
-[image of responsive design]
+[image]
 
 ---
 
@@ -119,25 +119,28 @@ The **child selector** in CSS is used to target elements
 that are ***direct children*** of a specified parent element.
 It is denoted by the greater-than sign `>`.
 
-- In `<header>`, select the `<h1>` **"Gigglepads"** child,
-  and set its `font-family` and `margin-top`:
+- Select `<header>` element, then within it,
+  select the `<h1>` child with the text **"Gigglepads"**,
+  and set its `font-family` and `margin-top` properties.
   ```css
   header > h1 {
       font-family: 'Arial Black', sans-serif;
       margin-top: 0;
   }
   ```
-  
-- In `<nav>`, select the `<h3>` **"CATEGORIES"** child,
-  and set its `margin-top`:
+
+- Select `<nav>` element, then within it,
+  select the `<h3>` child with the text **"CATEGORIES"**,
+  and set its `margin-top` property.
   ```css
   nav > h3 {
       margin-top: 0;
   }
   ```
-  
-- In `<nav>`, select the `<ul>` child,
-  and set its `padding`, `margin`, and `list-style-type`:
+
+- Select `<nav>` element, then within it,
+  select the `<ul>` child,
+  and set its `padding`, `margin`, and `list-style-type` properties.
   ```css
   nav > ul {
       padding: 0;
@@ -146,27 +149,30 @@ It is denoted by the greater-than sign `>`.
   }
   ```
 
-- In `<nav>`, select a `<ul>` child.
-  In that `<ul>`, select each `<li>` child,
-  and set its `padding`:
+- Select `<nav>` element, then within it,
+  select the `<ul>` child.
+  Inside the `<ul>` element, select each `<li>` child
+  and set its `padding` property.
   ```css
   nav > ul > li {
       padding: 4px;
   }
   ```
-  
-- In `<nav>`, select the `<ul>` child.
-  Then, in that `<ul>`, select each `<li>` child.
-  Finally, in each `<li>`,
-  select its `<a>` child and set its `text-decoration`:
+
+- Select `<nav>` element, then within it,
+  select the `<ul>` child.
+  Inside the `<ul>` element, select each `<li>` child.
+  Finally, within each `<li>`,
+  select its `<a>` child and set its `text-decoration` property.
   ```css
   nav > ul > li > a {
       text-decoration: none;
   }
   ```
 
-- In `<aside>`, select the `<h3>` **"CONTRIBUTE"** child,
-  and set its `margin-top`:
+- Select `<aside>` element, then within it,
+  select the `<h3>` child with the text **"CONTRIBUTE"**,
+  and set its `margin-top` property.
   ```css
   aside > h3 {
       margin-top: 0;
@@ -186,8 +192,9 @@ Unlike the child selector, the descendant selector selects
 not only direct children but all descendants
 of the specified parent element.
 
-- In `<aside>`, select any `<button>`,
-  and set its `font-weight`, `color`, `padding`, and `width`:
+- Select `<aside>` element, then within it,
+  select any `<button>` element,
+  and set its `font-weight`, `color`, `padding`, and `width` properties.
   ```css
   aside button {
       font-weight: bold;
@@ -196,9 +203,10 @@ of the specified parent element.
       width: 100%;
   }
   ```
-  
-- In `<main>`, select any `<section>`,
-  and set its grid properties:
+
+- Select `<main>` element, then within it,
+  select any `<section>` element,
+  and set its grid properties.
   ```css
   main section {
       display: grid;
@@ -236,20 +244,22 @@ For example, the selector `p.username` will target
   </small>
 </p>
 
-- In `<nav>`, select the `<ul>` child.
-  Then, in that `<ul>`, select the `<li>` child
-  with a class of `"active"`.
-  Finally, in that `<li>` tag,
-  select its `<a>` child and set its `font-weight`:
+- Select `<nav>` element, then within it,
+  select the `<ul>` child.
+  Inside the `<ul>` element,
+  select the `<li>` child with a **class** of `"active"`.
+  Finally, within that `<li>` tag,
+  select its `<a>` child and set its `font-weight` property.
   ```css
   nav > ul > li.active > a {
       font-weight: bold;
   }
   ```
 
-- Select any element with the class of `"joke"`.
-  In that element, select any descendant with a class of `"username"`,
-  and set its `font-style` and `font-size`:
+- Select any element with the **class** of `"joke"`.
+  Inside that element,
+  select any descendant with a **class** of `"username"`,
+  and set its `font-style` and `font-size` properties.
   ```css
   .joke .username {
       font-style: italic;
@@ -257,9 +267,10 @@ For example, the selector `p.username` will target
   }
   ```
 
-- Select any element with the class of `"joke"`.
-  In that element, select any descendant with a class of `"username"`,
-  and set its `font-style`:
+- Select any element with the **class** of `"joke"`.
+  Inside that element,
+  select any descendant with a **class** of `"punchline"`,
+  and set its `font-style` property.
   ```css
   .joke .punchline {
       font-style: italic;
@@ -301,8 +312,9 @@ with the class `"username"` and the id of `"user1"`.
   </small>
 </p>
 
-- In `<main>`, find a descendant element with an id of `"category"`,
-  and set its `margin-top` and `margin-bottom`:
+- Select `<main>` element, then within it,
+  find a descendant element with an **id** of `"category"`,
+  and set its `margin-top` and `margin-bottom` properties.
   ```css
   main #category {
       margin-top: 0;
@@ -310,8 +322,9 @@ with the class `"username"` and the id of `"user1"`.
   }
   ```
 
-- In `<main>`, find a descendant element with an id of `"tagline"`,
-  and set its `font-style` and `margin-top`:
+- Select `<main>` element, then within it,
+  find a descendant element with an **id** of `"tagline"`,
+  and set its `font-style` and `margin-top` properties.
   ```css
   main #tagline {
       font-style: italic;
@@ -320,11 +333,13 @@ with the class `"username"` and the id of `"user1"`.
   ```
 
 ***TODO:***
-Create internal styles to set the `background-color` for each joke,
+Add the internal styles to set the `background-color` of each joke,
 using the color references provided in **CSS | Activity #1 (Guided)**.
 
 ---
 
+### Responsive Design
 
+---
 
 ### External Styles
