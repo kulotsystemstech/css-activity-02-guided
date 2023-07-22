@@ -1,1 +1,1 @@
-Create your `index.css` in this folder.
+Create your `styles.css` in this folder.

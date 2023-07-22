@@ -420,7 +420,41 @@ and adjust the grid layout accordingly.
       }
   }
   ```
+Once you've added these media queries, test your output by resizing your browser
+to ensure your content adjusts correctly on large, medium, and small screens.
 
 ---
 
 ### External Styles
+External styles in CSS refer to separate style sheets stored in external `.css` files,
+allowing us to apply consistent and shared styling across multiple web pages
+by linking them to the HTML documents using the `<link/>` tag.
+
+*Example:*
+```html
+<link rel="stylesheet" href="css/index.css" />
+```
+
+<p>
+  <small>
+    <b>NOTE:</b>
+    CSS files exclusively contain CSS rules
+    and do not include any HTML tags,
+    not even the <code>&lt;style&gt;</code> tag.
+  </small>
+</p>
+
+
+***TODO:***
+1. Create a new file named **styles.css** inside the [**src/css**](src/css) folder.
+
+2. Cut all the code from within your `<style>` tag
+   and paste it into the newly created **styles.css** file.
+
+3. In your [index.html](src/index.html) file,
+   replace the `<style>` tag with the following `<link>` tag:
+    ```html
+    <link rel="stylesheet" href="css/styles.css" />
+    ```
+   Then, check the output of your webpage to ensure that
+   the styles are still working as expected.
