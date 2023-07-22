@@ -2,7 +2,7 @@
 In this activity, we will re-create **Gigglepads** from **CSS | Activity #1 (Guided)**
 using **Internal** and **External** stylesheets, and incorporate responsive design:
 
-[image]
+![responsive](assets/css-02--04-responsive.jpg)
 
 ---
 
