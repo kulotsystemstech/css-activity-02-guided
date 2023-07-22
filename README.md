@@ -234,6 +234,11 @@ use `tagname.classname`.
 For example, the selector `p.username` will target
 `<p class="username">`.
 
+An HTML element can have more than one class,
+example: `<p class="message error">`.
+To specifically select this element,
+we can use the selector `.message.error`.
+
 <p>
   <small>
     To demonstrate this using our <a href="src/index.html">index.html</a>,
