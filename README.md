@@ -432,7 +432,7 @@ by linking them to the HTML documents using the `<link/>` tag.
 
 *Example:*
 ```html
-<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/styles.css" />
 ```
 
 <p>
@@ -458,3 +458,7 @@ by linking them to the HTML documents using the `<link/>` tag.
     ```
    Then, check the output of your webpage to ensure that
    the styles are still working as expected.
+
+4. Add that `<link/>` tag to the other HTML pages
+   in the [src](src) folder and verify 
+   if the external stylesheet you made works on all pages.
