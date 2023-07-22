@@ -344,6 +344,83 @@ using the color references provided in **CSS | Activity #1 (Guided)**.
 
 ### Responsive Design
 
+We can implement **responsive design** to ensure
+that our content looks good on smaller screens by using **CSS media queries**,
+that allow us to create separate rules for different screen sizes
+and adjust the grid layout accordingly.
+
+***Add the following media queries to the end of your current CSS styles:***
+
+- for medium sized screens (up to 768px)
+  ```css
+  /* RESPONSIVE STYLES FOR SCREEN SIZES UP TO 768px */
+  @media screen and (max-width: 768px)
+  {
+      /* grid container and jokes section: contain two equal columns */
+      body > div, main section {
+          grid-template-columns: 1fr 1fr;
+      }
+  
+      /* <main> element: span 2 columns, remove top padding */
+      main {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          padding-top: 0;
+      }
+  
+      /* <nav> element: occupy column 1 of row 5 */
+      nav {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 5;
+          grid-row-end: 6;
+      }
+  
+      /* <aside> element: occupy column 2 of row 5 */
+      aside {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 5;
+          grid-row-end: 6;
+      }
+  
+      /* <footer> element: place at row 6 */
+      footer {
+          grid-row-start: 6;
+      }
+  }
+  ```
+
+- for small screens (up to 576px)
+  ```css
+  /* RESPONSIVE STYLES FOR SCREEN SIZES UP TO 576px */
+  @media screen and (max-width: 576px)
+  {
+      /* grid container and jokes section:         */
+      /*     contain one column, remove column gap */
+      body > div, main section {
+          grid-template-columns: 1fr;
+          grid-column-gap: 0;
+      }
+  
+      /* <main>, <nav>, <aside> elements: span 1 columns */
+      main, nav, aside {
+          grid-column-start: 1;
+          grid-column-end: 2;
+      }
+  
+      /* <aside> element: place at row 6 */
+      aside {
+          grid-row-start: 6;
+      }
+  
+      /* <footer> element: place at row 7 */
+      footer {
+          grid-row-start: 7;
+      }
+  }
+  ```
+
 ---
 
 ### External Styles
